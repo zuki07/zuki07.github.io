@@ -2039,13 +2039,13 @@ input, select, textarea {
 			border-color: rgba(224, 224, 224, 0.75);
 			border-style: solid;
 			border-top-width: 1px;
-			margin-top: 6em;
+			margin-top: 0;
 			padding: 4em 0;
 			position: relative;
 		}
 
 			footer.major:before, footer.major:after {
-				background: rgba(224, 224, 224, 0.75);
+				background: rgba(0, 0, 0, 0.75);
 				content: '';
 				display: block;
 				height: 1px;
@@ -2705,7 +2705,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-attachment: scroll,							scroll,					fixed;
+		background-attachment: scroll, scroll, fixed;
 		background-image: url("images/top-3200.svg"), url("images/header2.jpg"), url("../../images/header2.jpg");
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
@@ -2733,7 +2733,7 @@ input, select, textarea {
 
 		#header:after {
 			bottom: 0;
-			height: 50px;
+			height: 500px;
 		}
 
 		#header a {
@@ -2807,9 +2807,8 @@ input, select, textarea {
 				add additional top padding (to move our content out of its way)
 				and a negative margin (to move everything up a bit).
 			*/
-
-		margin-top: -260px;
-		padding: calc(460px + 6em) 0 10em 0;
+		margin: -100px;
+		padding: calc(460px + 6em) 0 10em;
 		position: relative;
 		text-align: center;
 	}
@@ -2921,11 +2920,6 @@ input, select, textarea {
 			z-index: -1;
 		}
 
-		#main header.major,
-		#main footer.major {
-			background: #ffffff;
-		}
-
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -2949,6 +2943,7 @@ input, select, textarea {
 			header.major p {
 				font-size: 1.25em;
 			}
+
 
 		/* Header */
 
@@ -3048,7 +3043,7 @@ input, select, textarea {
 			#footer {
 				background-image: url("images/bottom-1600.svg");
 				background-size: 1600px 230px;
-				margin-top: -100px;
+				margin: -50px;
 				padding: calc(230px + 4em) 0 6em 0;
 			}
 
@@ -3204,7 +3199,6 @@ input, select, textarea {
 			#footer {
 				background-image: url("images/bottom-1280.svg");
 				background-size: 1280px 184px;
-				margin-top: -75px;
 				padding: calc(184px + 2em) 0 2em 0;
 			}
 
@@ -3276,7 +3270,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				margin-top: -100px;
+				margin-top: -50px;
 				padding-left: 1em;
 				padding-right: 1em;
 			}
