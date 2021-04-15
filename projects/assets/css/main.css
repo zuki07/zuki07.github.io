@@ -84,7 +84,7 @@ mark {
 	}
 
 	body {
-		background: #ffffff;
+		background: #222222;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -296,6 +296,7 @@ mark {
 	.align-right {
 		text-align: right;
 	}
+
 
 /* Row */
 
@@ -1825,7 +1826,7 @@ mark {
 			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			background-color: transparent;
+			background-color: #585858;
 			border: solid 1px #c9c9c9;
 			border-radius: 4px;
 			width: 2.65em;
@@ -1833,7 +1834,7 @@ mark {
 			display: inline-block;
 			text-align: center;
 			line-height: 2.65em;
-			color: inherit;
+			color: #FFFFFF;
 		}
 
 			.icon.style2:before {
@@ -2470,13 +2471,17 @@ mark {
 		padding: 8em 0 0.1em 0 ;
 	}
 
+	  #header .inner, .inner h1, .inner p{
+			color: white;
+		}
+
 		#header .logo {
 			display: block;
 			border-bottom: 0;
 			color: inherit;
 			font-weight: 900;
 			letter-spacing: 0.35em;
-			margin: 0 0 2.5em 0;
+			margin: 0 0 .25em 0;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -2529,7 +2534,7 @@ mark {
 						height: 3em;
 						line-height: 3em;
 						padding: 0 1.5em;
-						background-color: rgba(255, 255, 255, 0.5);
+						background-color: rgba(255, 255, 255, 0.85);
 						border-radius: 4px;
 						border: 0;
 						font-size: 0.8em;
@@ -2573,6 +2578,10 @@ mark {
 						#header nav ul li a[href="#menu"]:after {
 							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
 							opacity: 1;
+						}
+
+						#header nav ul li a:hover{
+							background-color: rgba(255, 255, 255, 0.35);
 						}
 
 						#header nav ul li a[href="#menu"]:hover:before {
@@ -2808,10 +2817,10 @@ mark {
 	}
 
 		#footer > .inner {
-			display: -moz-flex;
+			/* display: -moz-flex;
 			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
+			display: -ms-flex; */
+			/* display: flex;
 			-moz-flex-wrap: wrap;
 			-webkit-flex-wrap: wrap;
 			-ms-flex-wrap: wrap;
@@ -2819,14 +2828,15 @@ mark {
 			-moz-flex-direction: row;
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
-			flex-direction: row;
+			flex-direction: row; */
+			text-align: center;
 		}
 
 			#footer > .inner > * > :last-child {
 				margin-bottom: 0;
 			}
 
-			#footer > .inner section:nth-child(1) {
+			/* #footer > .inner section:nth-child(1) {
 				width: calc(66% - 2.5em);
 				margin-right: 2.5em;
 			}
@@ -2834,7 +2844,7 @@ mark {
 			#footer > .inner section:nth-child(2) {
 				width: calc(33% - 2.5em);
 				margin-left: 2.5em;
-			}
+			} */
 
 			#footer > .inner .copyright {
 				width: 100%;
@@ -2869,7 +2879,7 @@ mark {
 				padding: 5em 0 3em 0 ;
 			}
 
-				#footer > .inner section:nth-child(1) {
+				/* #footer > .inner section:nth-child(1) {
 					width: calc(66% - 1.25em);
 					margin-right: 1.25em;
 				}
@@ -2877,13 +2887,13 @@ mark {
 				#footer > .inner section:nth-child(2) {
 					width: calc(33% - 1.25em);
 					margin-left: 1.25em;
-				}
+				} */
 
 		}
 
 		@media screen and (max-width: 980px) {
 
-			#footer > .inner section:nth-child(1) {
+			/* #footer > .inner section:nth-child(1) {
 				width: 66%;
 				margin-right: 0;
 			}
@@ -2891,7 +2901,7 @@ mark {
 			#footer > .inner section:nth-child(2) {
 				width: calc(33% - 2.5em);
 				margin-left: 2.5em;
-			}
+			} */
 
 		}
 
