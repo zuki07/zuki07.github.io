@@ -1,0 +1,29 @@
+353x326
+ch18_5 - prime numbers
+ch17_7 - generic_array_list1
+ch17_1 - generic array list with largest and smallest
+ch16_1 - insertion sorter
+ch15_5 - palindrome
+8_ch14 - hover_image
+6_ch14 - image_adjust
+3_ch13 - conference_gui
+ch16_6 - load file, sort and search
+SliderDemo - uses a slider to find f/c temps
+ch16_8 - sorter_exchanges 
+ch19_2 - linked list
+
+
+*array_list
+*conference_gui
+*generic_array_list1
+*hover_image
+*image_adjust
+*name_search
+*palindrome
+*prime_numbers
+*sorter_exchanges
+*swing_cal
+*temp_slider
+*linked_list
+
+
