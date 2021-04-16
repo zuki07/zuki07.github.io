@@ -1661,10 +1661,11 @@ input, select, textarea {
 				.row {
 					margin-top: -230px;
 					margin-left: -20px;
+					padding: 230px 0 0 20px;
 				}
 
 					.row > * {
-						padding: 230px 0 0 20px;
+						/* padding: 230px 0 0 20px; */
 					}
 
 					.row.gtr-uniform {
@@ -2709,7 +2710,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-attachment: scroll, scroll, fixed;
+		background-attachment: scroll,							scroll,					fixed;
 		background-image: url("images/top-3200.svg"), url("images/header2.jpg"), url("../../images/header2.jpg");
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
@@ -3047,7 +3048,7 @@ input, select, textarea {
 			#footer {
 				background-image: url("images/bottom-1600.svg");
 				background-size: 1600px 230px;
-				margin: -50px;
+				margin: -50px 0px;
 				padding: calc(230px + 4em) 0 6em 0;
 			}
 
@@ -3203,6 +3204,7 @@ input, select, textarea {
 			#footer {
 				background-image: url("images/bottom-1280.svg");
 				background-size: 1280px 184px;
+				margin-top: 0px;
 				padding: calc(184px + 2em) 0 2em 0;
 			}
 
