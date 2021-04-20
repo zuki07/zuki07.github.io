@@ -1,3 +1,17 @@
+function sendMail(){
+	if(document.getElementById("message").value.length<2000){
+			var link="mailto:wildzuk@yahoo.com"
+								+"?cc="
+								+"&subject="+encodeURIComponent(document.getElementById("text").value)
+								+"&body="+encodeURIComponent(document.getElementById("message").value);
+			window.location.href=link;
+	// alert(document.getElementById("message").value.length);
+	}
+	else{
+		alert("Message cannot be longer than 2000 characters.");
+	}
+}
+
 (function($) {
 
 	/**
@@ -431,25 +445,26 @@
 				});
 
 		// Events.
+
 			$this
 				.on('submit', function() {
-
-					$this.find('input[type=text],input[type=password],textarea')
-						.each(function(event) {
-
-							var i = $(this);
-
-							if (i.attr('name').match(/-polyfill-field$/))
-								i.attr('name', '');
-
-							if (i.val() == i.attr('placeholder')) {
-
-								i.removeClass('polyfill-placeholder');
-								i.val('');
-
-							}
-
-						});
+					alert("hello");
+					// $this.find('input[type=text],input[type=password],textarea')
+					// 	.each(function(event) {
+					//
+					// 		var i = $(this);
+					//
+					// 		if (i.attr('name').match(/-polyfill-field$/))
+					// 			i.attr('name', '');
+					//
+					// 		if (i.val() == i.attr('placeholder')) {
+					//
+					// 			i.removeClass('polyfill-placeholder');
+					// 			i.val('');
+					//
+					// 		}
+					//
+					// 	});
 
 				})
 				.on('reset', function(event) {
