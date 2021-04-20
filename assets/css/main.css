@@ -1661,7 +1661,7 @@ input, select, textarea {
 				.row {
 					margin-top: -230px;
 					margin-left: -20px;
-					padding: 0;
+					padding: 230px 0 0;
 				}
 
 					.row > * {
@@ -1719,6 +1719,7 @@ input, select, textarea {
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
+				padding-top: 0px;
 			}
 
 				.row > * {
