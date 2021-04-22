@@ -157,6 +157,7 @@ mark {
 		border-style: solid;
 		border-width: 3px;
 		border-radius: 10px;
+		border-color: rgba(255, 255, 255, .75);
 		height: 50px;
 	}
 
@@ -2289,11 +2290,12 @@ mark {
 					z-index: 2;
 				}
 
-			.tiles article > a, .tiles article > .content a {
+			.tiles article > .content {
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
 				display: flex;
+				flex-flow: column;
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
@@ -2310,19 +2312,22 @@ mark {
 				-webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
 				-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
 				transition: background-color 0.5s ease, transform 0.5s ease;
-				position: absolute;
-				top: 0;
-				left: 0;
-				/* width: 100%;
-				height: 100px; */
+				position: fixed;
+				top: 6em;
+				bottom: 6em;
+				left: 6em;
+				right: 6em;
+				/* width: 50%; */
+				/* height: 150px; */
 				padding: 1em;
 				border-radius: 4px;
-				/* border-bottom: 0; */
 				/* color: #ffffff; */
+				position: absolute;
 				text-align: center;
 				text-decoration: none;
 				z-index: 3;
-				cursor: crosshair;
+				margin: 0;
+				padding: 0;
 			}
 
 				/* .tiles article > a > :last-child {
@@ -2338,16 +2343,26 @@ mark {
 				}
 				/* .tiles article > a .content, */
 				.tiles article > .content a {
-					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
-					transition: max-height 0.5s ease, opacity 0.5s ease;
-					width: 75%;
-					height: 50px;
+					display: flex;
+					flex-flow: column;
+					-moz-transition: max-height 0.75s ease, opacity 0.75s ease;
+					-webkit-transition: max-height 0.75s ease, opacity 0.75s ease;
+					-ms-transition: max-height 0.75s ease, opacity 0.75s ease;
+					transition: max-height 0.75s ease, opacity 0.75s ease;
+					width: 100%;
+					/* height: 50px; */
 					line-height: 1.5;
-					/* margin-top: 5em; */
 					opacity: 0;
+					margin-left: auto;
+					margin-right: auto;
+					text-align: center;
+					justify-content: center;
+					margin: 1em;
 				}
+
+				/* .wrap{
+					position: absolute;
+				} */
 
 					.tiles article > a .content > :last-child {
 						margin-bottom: 0;
@@ -2395,7 +2410,10 @@ mark {
 
 				body:not(.is-touch) .tiles article:hover .content a{
 					opacity: 1;
-					margin-top: 0;
+				}
+
+				body:not(.is-touch) .content a:hover{
+					border-color: #00FF00;
 				}
 
 			/* body:not(.is-touch) .tiles article:hover .content a {
@@ -2415,10 +2433,17 @@ mark {
 			opacity: 0;
 		}
 
-		body.is-touch .tiles article .content {
-			max-height: 50px;
+		body.is-touch .tiles article .content a{
+			/* max-height: 50px; */
 			opacity: 1;
+			background-color: rgba(25, 25, 25, .9);;
+			border: 2px solid;
+			border-color: rgba(255, 255, 255, .75);;
+			color: #00FF00;
+			margin: 1em 1.5em;
 		}
+
+
 
 		@media screen and (max-width: 1280px) {
 
