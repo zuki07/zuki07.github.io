@@ -469,7 +469,6 @@ input, select, textarea {
 			-webkit-transition: opacity 0.25s ease-in-out;
 			-ms-transition: opacity 0.25s ease-in-out;
 			transition: opacity 0.25s ease-in-out;
-			background-image: url("../../images/header2.jpg");
 			content: '';
 			display: block;
 			height: 100%;
@@ -551,7 +550,7 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.icon:before {
+		.icon:before{
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			display: inline-block;
@@ -561,7 +560,7 @@ input, select, textarea {
 			line-height: 1;
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
+			/* font-weight: 400; */
 		}
 
 		.icon > .label {
@@ -1071,8 +1070,7 @@ input, select, textarea {
 			width: 2.35em;
 		}
 
-			#header .logo.fa-paper-plane-o:before {
-				left: -0.075em;
+			#header .logo.fas:before {
 				position: relative;
 			}
 
