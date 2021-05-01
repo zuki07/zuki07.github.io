@@ -977,6 +977,8 @@ input, select, textarea {
 
 		.feature.right {
 			text-align: right;
+			border-top: solid 1px;
+			border-bottom: solid 1px;
 		}
 
 			.feature.right .image {
@@ -1019,16 +1021,16 @@ input, select, textarea {
 			z-index: 0;
 		}
 
-		#header:before {
+		/* #header:before {
 			height: calc(100% - 50px);
 			opacity: 0.15;
 			top: 0;
-		}
+		} */
 
-		#header:after {
+		/* #header:after {
 			bottom: 0;
 			height: 500px;
-		}
+		} */
 
 		#header a {
 			border-bottom-color: rgba(255, 255, 255, 0.35);
@@ -1106,7 +1108,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
-		#footer:before {
+		/* #footer:before {
 			background: rgba(224, 224, 224, 0.75);
 			content: '';
 			height: calc(460px + 6em);
@@ -1115,7 +1117,7 @@ input, select, textarea {
 			top: 0;
 			width: 1px;
 			z-index: 0;
-		}
+		} */
 
 		#footer a {
 			color: #ffffff;
@@ -1202,7 +1204,7 @@ input, select, textarea {
 		z-index: 1;
 	}
 
-		#main:before {
+		/* #main:before {
 			background: rgba(224, 224, 224, 0.75);
 			content: '';
 			height: 100%;
@@ -1211,7 +1213,7 @@ input, select, textarea {
 			top: 0;
 			width: 1px;
 			z-index: -1;
-		}
+		} */
 
 /* Wide */
 
@@ -1450,6 +1452,11 @@ input, select, textarea {
 					float: none;
 					height: 15em;
 					width: 100%;
+				}
+
+				.feature.right {
+					border-top: none;
+					border-bottom: none;
 				}
 
 				.feature .content {
