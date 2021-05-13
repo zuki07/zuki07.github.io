@@ -1010,6 +1010,7 @@ input, select, textarea {
 		padding: 10em 0 20em 0;
 		position: relative;
 		text-align: center;
+		height: 100%;
 	}
 
 		#header:before, #header:after {
@@ -1311,19 +1312,20 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				background-attachment: scroll,							scroll;
+				background-attachment: scroll,							fixed;
 				background-image: url("images/top-1600.svg"), url("../../images/header2.jpg");
 				background-size: 1600px 230px,							cover;
-				padding: 6em 0 12em 0;
+				padding: 10em 0 0;
+				height: 75%;
 			}
 
-				#header:before {
+				/* #header:before {
 					height: calc(100% - 25px);
-				}
+				} */
 
-				#header:after {
+				/* #header:after {
 					height: 25px;
-				}
+				} */
 
 				#header h1 {
 					font-size: 2em;
@@ -1472,15 +1474,16 @@ input, select, textarea {
 				background-image: url("images/top-1280.svg"), url("../../images/header2.jpg");
 				background-size: 1280px 184px,							cover;
 				padding: 3em 0 7em 0;
+				height: 70%;
 			}
 
-				#header:before {
+				/* #header:before {
 					height: calc(100% - 20px);
 				}
 
 				#header:after {
 					height: 20px;
-				}
+				} */
 
 				#header .logo {
 					font-size: 1.5em;
@@ -1586,8 +1589,10 @@ input, select, textarea {
 		/* Header */
 
 			#header {
+				padding-top: 6em;
 				padding-left: 2em;
 				padding-right: 2em;
+				height: 50%;
 			}
 
 				#header br {
