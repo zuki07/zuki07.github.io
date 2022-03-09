@@ -3,6 +3,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+function alertUnderConstruction(){
+		alert("Sorry but this is still under construction.  Please check back later.\nThank You");
+}
 
 (function($) {
 
